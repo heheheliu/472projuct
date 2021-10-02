@@ -75,6 +75,47 @@ weighted avg       0.97      0.97      0.97       445
 Accuracy score of the test set is : 0.9662921348314607
 Macro average F1 of the test set is : 0.9661127796605525
 Weighted average F1 of the test set is : 0.9662658388568631
+(e)the prior probility of each class :
+2225
+business:0.2292134831460674
+entertainment:0.17348314606741572
+politics:0.18741573033707865
+sport:0.22966292134831462
+tech:0.1802247191011236
+
+(f) the size of the vocabulary(the number of different words)
+29421
+
+(g)the number of word-tokens in each class:
+The number of word-tokens in  business:223505
+The number of word-tokens in  entertainment:183735
+The number of word-tokens in  politics:244050
+The number of word-tokens in  sport:221795
+The number of word-tokens in  tech:257482
+
+(h)the number of word-tokens in the entire corpus:
+Total word-tokens in entire corpus:895199
+(j) the number and percentage of words with a frequency of 1 in the entire corpus:
+The number of words with a frequency of 1 in entire corpus: 0
+The percentage of words with a frequency of 1 in entire corpus :0.0
+
+(i)the number and percentage of words with freuency of zero in each class:
+The number of words with frequency of zero in business:0
+The percentage of words with frequency of zero in business:0.0
+The number of words with frequency of zero in entertainment:0
+The percentage of words with frequency of zero in entertainment:0.0
+The number of words with frequency of zero in politics:0
+The percentage of words with frequency of zero in politics:0.0
+The number of words with frequency of zero in sport:0
+The percentage of words with frequency of zero in sport:0.0
+The number of words with frequency of zero in tech:0
+The percentage of words with frequency of zero in tech:0.0
+
+(k) 2 favorite words and their log-prob
+frequency of 'love':153
+The log-prob of the 'love' favorite word is :-8.73802400505371
+frequency of 'key':247
+The log-prob of the 'key'favorite word is :-8.04209945480497
 --------------------------------MultinomialNB default values, try 0.0001-----------------------------------
 (b) the confusion matrix: 
 [[98  0  3  0  1]
@@ -99,3 +140,45 @@ weighted avg       0.97      0.97      0.97       445
 Accuracy score of the test set is : 0.9707865168539326
 Macro average F1 of the test set is : 0.9714071705998641
 Weighted average F1 of the test set is : 0.970826426187863
+
+(e)the prior probility of each class :
+2225
+business:0.2292134831460674
+entertainment:0.17348314606741572
+politics:0.18741573033707865
+sport:0.22966292134831462
+tech:0.1802247191011236
+
+(f) the size of the vocabulary(the number of different words)
+29421
+
+(g)the number of word-tokens in each class:
+The number of word-tokens in  business:164665.9421
+The number of word-tokens in  entertainment:124895.9421
+The number of word-tokens in  politics:185210.9421
+The number of word-tokens in  sport:162955.9421
+The number of word-tokens in  tech:198642.9421
+
+(h)the number of word-tokens in the entire corpus:
+Total word-tokens in entire corpus:836359.9421
+(j) the number and percentage of words with a frequency of 1 in the entire corpus:
+The number of words with a frequency of 1 in entire corpus: 0
+The percentage of words with a frequency of 1 in entire corpus :0.0
+
+(i)the number and percentage of words with freuency of zero in each class:
+The number of words with frequency of zero in business:0
+The percentage of words with frequency of zero in business:0.0
+The number of words with frequency of zero in entertainment:0
+The percentage of words with frequency of zero in entertainment:0.0
+The number of words with frequency of zero in politics:0
+The percentage of words with frequency of zero in politics:0.0
+The number of words with frequency of zero in sport:0
+The percentage of words with frequency of zero in sport:0.0
+The number of words with frequency of zero in tech:0
+The percentage of words with frequency of zero in tech:0.0
+
+(k) 2 favorite words and their log-prob
+frequency of 'love':151.0001
+The log-prob of the 'love' favorite word is :-8.619537370828047
+frequency of 'key':245.0001
+The log-prob of the 'key'favorite word is :-8.04209945480497
