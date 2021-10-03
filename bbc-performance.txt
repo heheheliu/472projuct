@@ -1,0 +1,184 @@
+--------------------------------MultinomialNB default values, try 1-----------------------------------
+(b) the confusion matrix: 
+[[98  0  4  0  0]
+ [ 0 78  1  0  2]
+ [ 4  0 82  0  1]
+ [ 0  0  0 91  0]
+ [ 0  0  0  0 84]]
+(c) the precision, recall and F1-measure for each class of the test set : 
+              precision    recall  f1-score   support
+
+           0       0.96      0.96      0.96       102
+           1       1.00      0.96      0.98        81
+           2       0.94      0.94      0.94        87
+           3       1.00      1.00      1.00        91
+           4       0.97      1.00      0.98        84
+
+    accuracy                           0.97       445
+   macro avg       0.97      0.97      0.97       445
+weighted avg       0.97      0.97      0.97       445
+
+(d) the accuracy, macro-average F1 and weighted-average F1 of the model: 
+Accuracy score of the test set is : 0.9730337078651685
+Macro average F1 of the test set is : 0.9733802530360499
+Weighted average F1 of the test set is : 0.9730292447251264
+(f) the size of the vocabulary(the number of different words
+29421
+(g) the number of word-tokens in each class: 
+The number of word-tokens in business: 164663
+The number of word-tokens in entertainment: 124893
+The number of word-tokens in politics: 185208
+The number of word-tokens in sport: 162953
+The number of word-tokens in tech: 198640
+(h) the number of word-tokens in the entire corpus: 
+Total word-tokens in entire corpus: 836357
+(j) the number and percentage of words with a frequency of 1 in the entire corpus: 
+The number of words with a frequency of 1 in entire corpus: 10005
+The percentage of words with a frequency of 1 in entire corpus: 0.01196259492059013
+(i) the number and percentage of words with freuency of zero in each class: 
+The number of words with frequency of zero in business: 17538
+The percentage of words with frequency of zero in business: 0.5961048230855511
+The number of words with frequency of zero in entertainment: 17746
+The percentage of words with frequency of zero in entertainment: 0.6031746031746031
+The number of words with frequency of zero in politics: 18201
+The percentage of words with frequency of zero in politics: 0.6186397471194045
+The number of words with frequency of zero in sport: 18850
+The percentage of words with frequency of zero in sport: 0.6406988205703409
+The number of words with frequency of zero in tech: 17323
+The percentage of words with frequency of zero in tech: 0.5887971177050406
+(k) 2 favoirite words and their log-prob
+frequency of 'love': 151
+the log-prob of the 'love' favorite word is: -8.619530997591884
+frequency of 'key': 245
+the log-prob of the 'key' favorite word is: -8.135552623862083
+--------------------------------MultinomialNB default values, try 2-----------------------------------
+(b) the confusion matrix: 
+[[98  0  4  0  0]
+ [ 0 75  2  0  4]
+ [ 4  0 82  0  1]
+ [ 0  0  0 91  0]
+ [ 0  0  0  0 84]]
+(c) the precision, recall and F1-measure for each class of the test set : 
+              precision    recall  f1-score   support
+
+           0       0.96      0.96      0.96       102
+           1       1.00      0.93      0.96        81
+           2       0.93      0.94      0.94        87
+           3       1.00      1.00      1.00        91
+           4       0.94      1.00      0.97        84
+
+    accuracy                           0.97       445
+   macro avg       0.97      0.97      0.97       445
+weighted avg       0.97      0.97      0.97       445
+
+(d) the accuracy, macro-average F1 and weighted-average F1 of the model: 
+Accuracy score of the test set is : 0.9662921348314607
+Macro average F1 of the test set is : 0.9661127796605525
+Weighted average F1 of the test set is : 0.9662658388568631
+(e)the prior probility of each class :
+2225
+business:0.2292134831460674
+entertainment:0.17348314606741572
+politics:0.18741573033707865
+sport:0.22966292134831462
+tech:0.1802247191011236
+
+(f) the size of the vocabulary(the number of different words)
+29421
+
+(g)the number of word-tokens in each class:
+The number of word-tokens in  business:223505
+The number of word-tokens in  entertainment:183735
+The number of word-tokens in  politics:244050
+The number of word-tokens in  sport:221795
+The number of word-tokens in  tech:257482
+
+(h)the number of word-tokens in the entire corpus:
+Total word-tokens in entire corpus:895199
+(j) the number and percentage of words with a frequency of 1 in the entire corpus:
+The number of words with a frequency of 1 in entire corpus: 0
+The percentage of words with a frequency of 1 in entire corpus :0.0
+
+(i)the number and percentage of words with freuency of zero in each class:
+The number of words with frequency of zero in business:0
+The percentage of words with frequency of zero in business:0.0
+The number of words with frequency of zero in entertainment:0
+The percentage of words with frequency of zero in entertainment:0.0
+The number of words with frequency of zero in politics:0
+The percentage of words with frequency of zero in politics:0.0
+The number of words with frequency of zero in sport:0
+The percentage of words with frequency of zero in sport:0.0
+The number of words with frequency of zero in tech:0
+The percentage of words with frequency of zero in tech:0.0
+
+(k) 2 favorite words and their log-prob
+frequency of 'love':153
+The log-prob of the 'love' favorite word is :-8.73802400505371
+frequency of 'key':247
+The log-prob of the 'key'favorite word is :-8.04209945480497
+--------------------------------MultinomialNB default values, try 0.0001-----------------------------------
+(b) the confusion matrix: 
+[[98  0  3  0  1]
+ [ 1 78  1  0  1]
+ [ 4  0 82  0  1]
+ [ 0  0  0 91  0]
+ [ 1  0  0  0 83]]
+(c) the precision, recall and F1-measure for each class of the test set : 
+              precision    recall  f1-score   support
+
+           0       0.94      0.96      0.95       102
+           1       1.00      0.96      0.98        81
+           2       0.95      0.94      0.95        87
+           3       1.00      1.00      1.00        91
+           4       0.97      0.99      0.98        84
+
+    accuracy                           0.97       445
+   macro avg       0.97      0.97      0.97       445
+weighted avg       0.97      0.97      0.97       445
+
+(d) the accuracy, macro-average F1 and weighted-average F1 of the model: 
+Accuracy score of the test set is : 0.9707865168539326
+Macro average F1 of the test set is : 0.9714071705998641
+Weighted average F1 of the test set is : 0.970826426187863
+
+(e)the prior probility of each class :
+2225
+business:0.2292134831460674
+entertainment:0.17348314606741572
+politics:0.18741573033707865
+sport:0.22966292134831462
+tech:0.1802247191011236
+
+(f) the size of the vocabulary(the number of different words)
+29421
+
+(g)the number of word-tokens in each class:
+The number of word-tokens in  business:164665.9421
+The number of word-tokens in  entertainment:124895.9421
+The number of word-tokens in  politics:185210.9421
+The number of word-tokens in  sport:162955.9421
+The number of word-tokens in  tech:198642.9421
+
+(h)the number of word-tokens in the entire corpus:
+Total word-tokens in entire corpus:836359.9421
+(j) the number and percentage of words with a frequency of 1 in the entire corpus:
+The number of words with a frequency of 1 in entire corpus: 0
+The percentage of words with a frequency of 1 in entire corpus :0.0
+
+(i)the number and percentage of words with freuency of zero in each class:
+The number of words with frequency of zero in business:0
+The percentage of words with frequency of zero in business:0.0
+The number of words with frequency of zero in entertainment:0
+The percentage of words with frequency of zero in entertainment:0.0
+The number of words with frequency of zero in politics:0
+The percentage of words with frequency of zero in politics:0.0
+The number of words with frequency of zero in sport:0
+The percentage of words with frequency of zero in sport:0.0
+The number of words with frequency of zero in tech:0
+The percentage of words with frequency of zero in tech:0.0
+
+(k) 2 favorite words and their log-prob
+frequency of 'love':151.0001
+The log-prob of the 'love' favorite word is :-8.619537370828047
+frequency of 'key':245.0001
+The log-prob of the 'key'favorite word is :-8.04209945480497
