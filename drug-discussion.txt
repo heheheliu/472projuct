@@ -1,0 +1,5 @@
+Gaussian Naive Bay , Base Descision Tree ,Top Descision Tree, and Perceptron with default parameter values, 
+the performance don't change.Base-MLP and Top-MLP performance are the different.
+These 6 models except Top-MLP about accuracy are not change much, they are stable. But Base-MLP and Top-MLP 
+they macro average and weight average are changeable when run 10 times, because MLP when initial their models, 
+they pickup random values, maybe thats why it causes different performance.
