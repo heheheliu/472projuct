@@ -1,3 +1,0 @@
-a) Accuracy is best suited to this dataset,because they are important weight are the same, so percision or recall are not important element for this dataset.
-
-b) The result of step 7 and the 8 are the same. The step 9 and 10, they use to modify the smooth valve, so the performance is also differnt.According to step 9, we find the smaller smooth valve, the model will be more accurate. Compare step 7 and step 10, their smooth valve is similar, but the step 10 is more accurate.
