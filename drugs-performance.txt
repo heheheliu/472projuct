@@ -1,0 +1,213 @@
+--------------------------------GaussianNB default values-----------------------------------
+(b) the confusion matrix: 
+[[10  0  0  0  0]
+ [ 0  4  0  0  0]
+ [ 0  0  3  0  0]
+ [ 0  0  0 10  0]
+ [ 1  0  4  0 18]]
+(c) the precision, recall and F1-measure for each class of the test set : 
+              precision    recall  f1-score   support
+
+       drugA       0.91      1.00      0.95        10
+       drugB       1.00      1.00      1.00         4
+       drugC       0.43      1.00      0.60         3
+       drugX       1.00      1.00      1.00        10
+       drugY       1.00      0.78      0.88        23
+
+    accuracy                           0.90        50
+   macro avg       0.87      0.96      0.89        50
+weighted avg       0.95      0.90      0.91        50
+
+(d) the accuracy, macro-average F1 and weighted-average F1 of the model: 
+Accuracy score of the test set is : 0.9
+Macro average F1 of the test set is : 0.8860859465737514
+Weighted average F1 of the test set is : 0.9103786295005807
+--------------------------------Decision Tree default values-----------------------------------
+(b) the confusion matrix: 
+[[10  0  0  0  0]
+ [ 0  4  0  0  0]
+ [ 0  0  3  0  0]
+ [ 0  0  0 10  0]
+ [ 0  0  0  0 23]]
+(c) the precision, recall and F1-measure for each class of the test set : 
+              precision    recall  f1-score   support
+
+       drugA       1.00      1.00      1.00        10
+       drugB       1.00      1.00      1.00         4
+       drugC       1.00      1.00      1.00         3
+       drugX       1.00      1.00      1.00        10
+       drugY       1.00      1.00      1.00        23
+
+    accuracy                           1.00        50
+   macro avg       1.00      1.00      1.00        50
+weighted avg       1.00      1.00      1.00        50
+
+(d) the accuracy, macro-average F1 and weighted-average F1 of the model: 
+Accuracy score of the test set is : 1.0
+Macro average F1 of the test set is : 1.0
+Weighted average F1 of the test set is : 1.0
+--------------------------------Top-DT hyperoarameter values-----------------------------------
+best_estimator: {'criterion': 'gini', 'max_depth': 5, 'min_samples_split': 3} best_score: 0.9800000000000001
+(b) the confusion matrix: 
+[[10  0  0  0  0]
+ [ 0  4  0  0  0]
+ [ 0  0  3  0  0]
+ [ 0  0  0 10  0]
+ [ 0  0  0  0 23]]
+(c) the precision, recall and F1-measure for each class of the test set : 
+              precision    recall  f1-score   support
+
+       drugA       1.00      1.00      1.00        10
+       drugB       1.00      1.00      1.00         4
+       drugC       1.00      1.00      1.00         3
+       drugX       1.00      1.00      1.00        10
+       drugY       1.00      1.00      1.00        23
+
+    accuracy                           1.00        50
+   macro avg       1.00      1.00      1.00        50
+weighted avg       1.00      1.00      1.00        50
+
+(d) the accuracy, macro-average F1 and weighted-average F1 of the model: 
+Accuracy score of the test set is : 1.0
+Macro average F1 of the test set is : 1.0
+Weighted average F1 of the test set is : 1.0
+--------------------------------PER with default parameter values-----------------------------------
+(b) the confusion matrix: 
+[[ 0  0  0  9  1]
+ [ 0  0  0  4  0]
+ [ 0  0  0  2  1]
+ [ 0  0  0 10  0]
+ [ 0  0  0 13 10]]
+(c) the precision, recall and F1-measure for each class of the test set : 
+              precision    recall  f1-score   support
+
+       drugA       0.00      0.00      0.00        10
+       drugB       0.00      0.00      0.00         4
+       drugC       0.00      0.00      0.00         3
+       drugX       0.26      1.00      0.42        10
+       drugY       0.83      0.43      0.57        23
+
+    accuracy                           0.40        50
+   macro avg       0.22      0.29      0.20        50
+weighted avg       0.44      0.40      0.35        50
+
+(d) the accuracy, macro-average F1 and weighted-average F1 of the model: 
+Accuracy score of the test set is : 0.4
+Macro average F1 of the test set is : 0.19761904761904764
+Weighted average F1 of the test set is : 0.3461904761904762
+--------------------------------Base-MLP with default parameter values-----------------------------------
+(b) the confusion matrix: 
+[[ 0  0  0  4  6]
+ [ 0  0  0  4  0]
+ [ 0  0  0  2  1]
+ [ 0  0  0  5  5]
+ [ 0  0  0  0 23]]
+(c) the precision, recall and F1-measure for each class of the test set : 
+              precision    recall  f1-score   support
+
+       drugA       0.00      0.00      0.00        10
+       drugB       0.00      0.00      0.00         4
+       drugC       0.00      0.00      0.00         3
+       drugX       0.33      0.50      0.40        10
+       drugY       0.66      1.00      0.79        23
+
+    accuracy                           0.56        50
+   macro avg       0.20      0.30      0.24        50
+weighted avg       0.37      0.56      0.44        50
+
+(d) the accuracy, macro-average F1 and weighted-average F1 of the model: 
+Accuracy score of the test set is : 0.56
+Macro average F1 of the test set is : 0.2386206896551724
+Weighted average F1 of the test set is : 0.4448275862068966
+--------------------------------Top-MLP hyperoarameter values-----------------------------------
+a) best parameter: {'activation': 'tanh', 'hidden_layer_sizes': (30, 50), 'solver': 'adam'}
+(b) the confusion matrix: 
+[[ 7  2  0  0  1]
+ [ 0  4  0  0  0]
+ [ 0  0  0  2  1]
+ [ 0  0  0 10  0]
+ [ 0  0  0  1 22]]
+(c) the precision, recall and F1-measure for each class of the test set : 
+              precision    recall  f1-score   support
+
+       drugA       1.00      0.70      0.82        10
+       drugB       0.67      1.00      0.80         4
+       drugC       0.00      0.00      0.00         3
+       drugX       0.77      1.00      0.87        10
+       drugY       0.92      0.96      0.94        23
+
+    accuracy                           0.86        50
+   macro avg       0.67      0.73      0.69        50
+weighted avg       0.83      0.86      0.83        50
+
+(d) the accuracy, macro-average F1 and weighted-average F1 of the model: 
+Accuracy score of the test set is : 0.86
+Macro average F1 of the test set is : 0.6858529683843935
+Weighted average F1 of the test set is : 0.8332572237035424
+**************************************************************************************
+************************this is 10 times***************************************
+********************************************************************************
+--------------------------------GaussianNB default values-----------------------------------
+the list of accuracy[0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9]
+average of accuracy score of hte test set is :0.9000000000000001
+standard deviation for accuracy: 0.0
+the list of Macro average F1[0.8860859465737514, 0.8860859465737514, 0.8860859465737514, 0.8860859465737514, 0.8860859465737514, 0.8860859465737514, 0.8860859465737514, 0.8860859465737514, 0.8860859465737514, 0.8860859465737514]
+average of Macro average F1 of the test set is : 0.8860859465737514
+standard deviation for Macro average F1: 0.0
+the list of weight average F1: [0.9103786295005807, 0.9103786295005807, 0.9103786295005807, 0.9103786295005807, 0.9103786295005807, 0.9103786295005807, 0.9103786295005807, 0.9103786295005807, 0.9103786295005807, 0.9103786295005807]
+average of Weighted average F1 of the test set is : 0.9103786295005809
+standard deviation for weight average F1: 0.0
+**************************************************************************************
+--------------------------------Decision Tree default values-----------------------------------
+the list of accuracy[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+average of accuracy score of hte test set is :1.0
+standard deviation for accuracy: 0.0
+the list of Macro average F1[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+average of Macro average F1 of the test set is : 1.0
+standard deviation for Macro average F1: 0.0
+the list of weight average F1: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+average of Weighted average F1 of the test set is : 1.0
+standard deviation for weight average F1: 0.0
+--------------------------------Top-DT hyperoarameter values-----------------------------------ht average F1: [0.979933829611249, 0.979933829611249, 0.979933829611249, 0.979933829611249, 0.979933829611249, 0.979933829611249, 0.979933829611249, 0.979933829611249, 0.979933829611249, 0.979933829611249]
+average of Weighted average F1 of the test set is : 0.9799338296112488
+standard deviation for weight average F1: 0.0
+--------------------------------Top-DT hyperoarameter values-----------------------------------
+the list of accuracy[0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98, 0.98]
+average of accuracy score of hte test set is :0.9800000000000002
+standard deviation for accuracy: 0.0
+the list of Macro average F1[0.9884201819685691, 0.9884201819685691, 0.9884201819685691, 0.9884201819685691, 0.9884201819685691, 0.9884201819685691, 0.9884201819685691, 0.9884201819685691, 0.9884201819685691, 0.9884201819685691]
+average of Macro average F1 of the test set is : 0.9884201819685691
+standard deviation for Macro average F1: 0.0
+the list of weight average F1: [0.979933829611249, 0.979933829611249, 0.979933829611249, 0.979933829611249, 0.979933829611249, 0.979933829611249, 0.979933829611249, 0.979933829611249, 0.979933829611249, 0.979933829611249]
+average of Weighted average F1 of the test set is : 0.9799338296112488
+standard deviation for weight average F1: 0.0
+--------------------------------PER with default parameter values-----------------------------------
+the list of accuracy[0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52, 0.52]
+average of accuracy score of hte test set is :0.5199999999999999
+standard deviation for accuracy: 0.0
+the list of Macro average F1[0.29305263157894734, 0.29305263157894734, 0.29305263157894734, 0.29305263157894734, 0.29305263157894734, 0.29305263157894734, 0.29305263157894734, 0.29305263157894734, 0.29305263157894734, 0.29305263157894734]
+average of Macro average F1 of the test set is : 0.2930526315789473
+standard deviation for Macro average F1: 0.0
+the list of weight average F1: [0.4925473684210526, 0.4925473684210526, 0.4925473684210526, 0.4925473684210526, 0.4925473684210526, 0.4925473684210526, 0.4925473684210526, 0.4925473684210526, 0.4925473684210526, 0.4925473684210526]
+average of Weighted average F1 of the test set is : 0.49254736842105273
+standard deviation for weight average F1: 0.0
+--------------------------------Base-MLP with default parameter values-----------------------------------
+the list of accuracy[0.5, 0.48, 0.5, 0.5, 0.5, 0.5, 0.5, 0.52, 0.48, 0.48]
+average of accuracy score of hte test set is :0.4960000000000001
+standard deviation for accuracy: 0.012649110640673528
+the list of Macro average F1[0.23216783216783216, 0.22075471698113205, 0.23216783216783216, 0.23216783216783216, 0.23216783216783216, 0.23216783216783216, 0.23216783216783216, 0.2431372549019608, 0.22075471698113205, 0.22075471698113205]
+average of Macro average F1 of the test set is : 0.22984083988523502
+standard deviation for Macro average F1: 0.00712551673823656
+the list of weight average F1: [0.4083916083916084, 0.3894339622641509, 0.4083916083916084, 0.4083916083916084, 0.4083916083916084, 0.4083916083916084, 0.4083916083916084, 0.4266666666666667, 0.3894339622641509, 0.3894339622641509]
+average of Weighted average F1 of the test set is : 0.404531820380877
+standard deviation for weight average F1: 0.01184705851987755
+--------------------------------Top-MLP hyperoarameter values-----------------------------------
+the list of accuracy[0.92, 0.74, 0.8, 0.84, 0.82, 0.72, 0.84, 0.66, 0.82, 0.88]
+average of accuracy score of hte test set is :0.804
+standard deviation for accuracy: 0.07763160868271807
+the list of Macro average F1[0.8490203649027178, 0.5131421061653619, 0.6826546003016591, 0.7209879073580652, 0.6958295363173412, 0.5115119218419075, 0.7175883575883576, 0.4161904761904762, 0.7251572674097782, 0.7558028616852146]
+average of Macro average F1 of the test set is : 0.658788539976088
+standard deviation for Macro average F1: 0.13376166383014867
+the list of weight average F1: [0.9200462563403741, 0.6703508370950232, 0.7942986425339368, 0.8305492928878868, 0.8041420530688822, 0.6881751725080276, 0.8181926541926542, 0.5979047619047619, 0.8117807085310672, 0.8625649178590357]
+average of Weighted average F1 of the test set is : 0.7798005296921651
+standard deviation for weight average F1: 0.097669595225613
