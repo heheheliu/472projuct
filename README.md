@@ -1,3 +1,4 @@
+URL: https://github.com/heheheliu/472projuct
 # 472 Miniprojuct_1
 fall 2021 472 mini project_1 team named 'Eternity'
 Teammates: Liu He, Zhihong Qian, Ni Zeng
