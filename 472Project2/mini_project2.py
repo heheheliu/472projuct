@@ -406,7 +406,7 @@ class Game:
                 if self.current_state[i][j] == '.':
                     if max:  # if the player is max => '0'
                         interrupt = time.time() - start
-                        if interrupt > t:
+                        if interrupt > t or depth == 0:
                             break
                         self.current_state[i][j] = 'O'
                         (v, _, _) = self.minimax(depth-1, max=False)
@@ -416,7 +416,7 @@ class Game:
                             y = j
                     else:  # if the player is min => 'X'
                         interrupt = time.time() - start
-                        if interrupt > t:
+                        if interrupt > t or depth == 0:
                             break
                         self.current_state[i][j] = 'X'
                         (v, _, _) = self.minimax(depth-1, max=True)
