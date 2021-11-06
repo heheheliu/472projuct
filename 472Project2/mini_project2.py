@@ -376,7 +376,7 @@ class Game:
         return False
 
     # minimax
-    def minimax(self, depth, max=False):  # max is false => the player is min
+    def minimax(self, depth=100, max=False):  # max is false => the player is min
         # Minimizing for 'X' and maximizing for 'O'
         # Possible values are:
         # -100 - win for 'X' loss for '0'
@@ -498,9 +498,9 @@ class Game:
             start = time.time()
             if algo == self.MINIMAX:
                 if self.player_turn == 'X':
-                    (_, x, y) = self.minimax(d1, max=False)
+                    (_, x, y) = self.minimax(depth=d1, max=False)
                 else:
-                    (_, x, y) = self.minimax(d2, max=True)
+                    (_, x, y) = self.minimax(depth=d2, max=True)
             else:  # algo == self.ALPHABETA
                 if self.player_turn == 'X':
                     (m, x, y) = self.alphabeta(depth=d1, max=False)
@@ -643,9 +643,9 @@ def main():
     if valid:
         g = Game(n, b, b_locs, s, d1, d2, t, recommend=True)
         g.draw_board()
-        # g.play(algo=Game.MINIMAX, player_x=Game.AI, player_o=Game.AI)
+        g.play(algo=Game.MINIMAX, player_x=Game.AI, player_o=Game.AI)
         # g.play(algo=Game.MINIMAX, player_x=Game.HUMAN, player_o=Game.HUMAN)
-        g.play(algo=Game.MINIMAX, player_x=Game.AI, player_o=Game.HUMAN)
+        # g.play(algo=Game.MINIMAX, player_x=Game.AI, player_o=Game.HUMAN)
         # g.play(algo=Game.ALPHABETA, player_x=Game.AI, player_o=Game.AI)
         # g.play(algo=Game.ALPHABETA, player_x=Game.AI, player_o=Game.HUMAN)
         # g.play(algo=Game.ALPHABETA, player_x=Game.HUMAN, player_o=Game.HUMAN)
