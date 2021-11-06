@@ -391,7 +391,6 @@ class Game:
 
         if not self.checkHasEmpty() or depth == 0:
             value = self.heuristic1()
-
         x = None
         y = None
         result = self.is_end()
@@ -438,7 +437,7 @@ class Game:
         if max:
             value = -2000
         start = time.time()
-        if not self.checkHasEmpty():
+        if not self.checkHasEmpty() or depth == 0:
             value = self.heuristic1()
         x = None
         y = None
@@ -454,7 +453,7 @@ class Game:
                 if self.current_state[i][j] == '.':
                     if max:
                         interrupt = time.time() - start
-                        if interrupt > t:
+                        if interrupt > t or depth == 0:
                             break
                         self.current_state[i][j] = 'O'
                         (v, _, _) = self.alphabeta(alpha, beta, depth-1, max=False)
@@ -464,7 +463,7 @@ class Game:
                             y = j
                     else:
                         interrupt = time.time() - start
-                        if interrupt > t:
+                        if interrupt > t or depth == 0:
                             break
                         self.current_state[i][j] = 'X'
                         (v, _, _) = self.alphabeta(alpha, beta, depth-1, max=True)
