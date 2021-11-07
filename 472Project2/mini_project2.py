@@ -66,7 +66,7 @@ class Game:
         # print column header
         print(' ', end=" ")
         for i in range(0, n):
-            print(F'{Letter(i).name}', end=" ")
+            print(F'{Letter(i).name}', end="  ")
 
         print()
         # draw the board
@@ -77,7 +77,7 @@ class Game:
                     print(F'{x}', end="")
                     print(F'|', end="")
                 # draw row content
-                print(F'{self.current_state[x][y]}', end=" ")
+                print(F'{self.current_state[x][y]}', end="  ")
 
             print()
         print()
