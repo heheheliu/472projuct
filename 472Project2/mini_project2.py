@@ -447,7 +447,7 @@ class Game:
             score = score + 20000
         elif count_min == 10:
             score = score - 20000
-        if count_max == 9:
+        elif count_max == 9:
             score = score + 10000
         elif count_min == 9:
             score = score - 10000
