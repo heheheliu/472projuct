@@ -3,6 +3,7 @@
 import time
 import sys
 from enum import Enum
+import numpy as np
 
 # global variables
 global n, b, b_locs, s, d1, d2, t
@@ -295,14 +296,15 @@ class Game:
             print(F'Player {self.player_turn}, enter your move:')
             # check the px coordinate
             while True:
-                px_letter = input('enter the x coordinate: ')
-                if self.is_valid_letter():
-                    px = str(Letter[px_letter.upper()].value)
+                px = input('enter the x coordinate: ')
+                if self.is_valid_p(px):
                     break
+
             while True:
                 # check py coordinate
-                py = input('enter the y coordinate: ')
-                if self.is_valid_p(py):
+                py_Letter = input('enter the y coordinate: ')
+                if self.is_valid_letter():
+                    py = str(Letter[py_Letter.upper()].value)
                     break
             # check (px,py) coordinate is valid
             if self.is_valid(px, py):
@@ -420,9 +422,68 @@ class Game:
         value = value1 - value2
         return value
 
-    def calculatePossibleWins2(self, symbol, another_symbol):
-        value = 0
-        return value
+    def calculatePossibleWins2(self, max_symbol, min_symbol):
+        score = 0
+        # diagonal calculate
+        board = np.array(self.current_state)
+        diags = [board[::-1, :].diagonal(i) for i in range(-board.shape[0] + 1, board.shape[1])]
+        diags.extend(board.diagonal(i) for i in range(board.shape[1] - 1, -board.shape[0], -1))
+
+        for n in diags:
+            if n.size >= s:
+                count_max = 0
+                count_min = 0
+
+                for k in n:
+                    if k == '0':
+                        count_max = count_max + 1
+                    if k == 'X':
+                        count_min = count_min + 1
+                score = self.calculate_score(count_max, count_min, score)
+        return score
+
+    def calculate_score(self, count_max, count_min, score):
+        if count_max == 10:
+            score = score + 20000
+        elif count_min == 10:
+            score = score - 20000
+        if count_max == 9:
+            score = score + 10000
+        elif count_min == 9:
+            score = score - 10000
+        elif count_max == 8:
+            score = score + 6000
+        elif count_min == 8:
+            score = score - 6000
+        elif count_max == 7:
+            score = score + 3000
+        elif count_min == 7:
+            score = score - 3000
+        elif count_max == 6:
+            score = score + 2000
+        elif count_min == 6:
+            score = score - 2000
+        elif count_max == 5:
+            score = score + 1000
+        elif count_min == 5:
+            score = score - 1000
+        elif count_max == 4:
+            score = score + 600
+        elif count_min == 4:
+            score = score - 600
+        elif count_max == 3:
+            score = score + 300
+        elif count_min == 3:
+            score = score - 300
+        elif count_max == 2:
+            score = score + 100
+        elif count_min == 2:
+            score = score - 100
+        elif count_max == 1:
+            score = score + 10
+        elif count_min == 1:
+            score = score - 10
+        return score
 
     # e2 heuristic function
     def heuristic2(self):
@@ -451,11 +512,11 @@ class Game:
         # -100 - win for 'X' loss for '0'
         # value  - a tie
         # 100  - loss for 'X' win for '0'
-        # We're initially setting it to 2000 or -2000 as worse than the worst case:
+        # We're initially setting it to 50000 or -50000 as worse than the worst case:
 
-        value = 2000
+        value = 50000
         if max:
-            value = -2000
+            value = -50000
         # if not self.checkHasEmpty():
         #     value = self.heuristic1()
         x = None
@@ -470,10 +531,9 @@ class Game:
                         if max:  # if the player is max => '0'
                             interrupt = time.time() - start
                             if interrupt > time_interrupt:
-
                                 return (value, x, y)
                             self.current_state[i][j] = 'O'
-                            (v, _, _) = self.minimax(depth + 1, depth_max, max=False)
+                            (v, _, _) = self.minimax(depth=depth + 1, depth_max=depth_max, max=False)
                             if v > value:
                                 value = v
                                 x = i
@@ -481,10 +541,9 @@ class Game:
                         else:  # if the player is min => 'X'
                             interrupt = time.time() - start
                             if interrupt > time_interrupt:
-
                                 return (value, x, y)
                             self.current_state[i][j] = 'X'
-                            (v, _, _) = self.minimax(depth + 1, depth_max, max=True)
+                            (v, _, _) = self.minimax(depth=depth + 1, depth_max=depth_max, max=True)
                             if v < value:
                                 value = v
                                 x = i
@@ -520,11 +579,11 @@ class Game:
         # -100 - win for 'X'
         # value  - a tie
         # 100 - loss for 'X'
-        # We're initially setting it to 2000 or -2000 as worse than the worst case:
+        # We're initially setting it to 50000 or -50000 as worse than the worst case:
 
-        value = 2000
+        value = 50000
         if max:
-            value = -2000
+            value = -50000
 
         # if not self.checkHasEmpty() or depth == 0:
         #     value = self.heuristic1()
@@ -538,10 +597,9 @@ class Game:
                         if max:
                             interrupt = time.time() - start
                             if interrupt > time_interrupt:
-
                                 return (value, x, y)
                             self.current_state[i][j] = 'O'
-                            (v, _, _) = self.alphabeta(alpha, beta, depth + 1, depth_max, max=False)
+                            (v, _, _) = self.alphabeta(alpha, beta, depth=depth + 1, depth_max=depth_max, max=False)
                             if v > value:
                                 value = v
                                 x = i
@@ -549,10 +607,9 @@ class Game:
                         else:
                             interrupt = time.time() - start
                             if interrupt > time_interrupt:
-
                                 return (value, x, y)
                             self.current_state[i][j] = 'X'
-                            (v, _, _) = self.alphabeta(alpha, beta, depth - 1, depth_max, max=True)
+                            (v, _, _) = self.alphabeta(alpha, beta, depth=depth + 1, depth_max=depth_max, max=True)
                             if v < value:
                                 value = v
                                 x = i
@@ -658,7 +715,6 @@ def validate_Input():
                         if is_valid_positive_int(val_x) and is_valid_bound(val_x, max_bound=(n - 1)):
                             x_coordinate = int(val_x)
                             break
-
 
                     # get y coordinate
                     while True:
