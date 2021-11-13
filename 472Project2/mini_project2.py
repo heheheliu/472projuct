@@ -58,8 +58,8 @@ class Game:
                 for b_loc in self.b_locs:
                     if b_loc == (i, j):
                         row.append('*')
-                else:
-                    row.append('.')
+                    else:
+                        row.append('.')
 
             self.current_state.append(row)
         # Player X always plays first
@@ -412,10 +412,10 @@ class Game:
         result = self.is_end()
         # min win
         if result == 'X':
-            return -100
+            return -500000
         # max win
         elif result == 'O':
-            return 100
+            return 500000
 
         value1 = self.calculatePossibleWins1('0')  # max
         value2 = self.calculatePossibleWins1('X')  # min
@@ -429,60 +429,82 @@ class Game:
         diags = [board[::-1, :].diagonal(i) for i in range(-board.shape[0] + 1, board.shape[1])]
         diags.extend(board.diagonal(i) for i in range(board.shape[1] - 1, -board.shape[0], -1))
 
-        for n in diags:
-            if n.size >= s:
+        for arr in diags:
+            if arr.size >= s:
                 count_max = 0
                 count_min = 0
 
-                for k in n:
+                for k in arr:
                     if k == '0':
                         count_max = count_max + 1
                     if k == 'X':
                         count_min = count_min + 1
                 score = self.calculate_score(count_max, count_min, score)
+        # row calculate
+        for i in range(0, n):
+            count_max = 0
+            count_min = 0
+            for j in range(0, n):
+                if self.current_state[i][j] == '0':
+                    count_max += 1
+                if self.current_state[i][j] == 'X':
+                    count_min += 1
+            score = self.calculate_score(count_max, count_min, score)
+
+        # column calculate
+        for i in range(0, n):
+            count_max = 0
+            count_min = 0
+            for j in range(0, n):
+                if self.current_state[j][i] == '0':
+                    count_max += 1
+                if self.current_state[j][i] == 'X':
+                    count_min += 1
+            score = self.calculate_score(count_max, count_min, score)
+
         return score
 
     def calculate_score(self, count_max, count_min, score):
         if count_max == 10:
-            score = score + 20000
+            score = score + 100000
         elif count_min == 10:
-            score = score - 20000
+            score = score - 100000
         elif count_max == 9:
-            score = score + 10000
+            score = score + 50000
         elif count_min == 9:
-            score = score - 10000
+            score = score - 50000
         elif count_max == 8:
-            score = score + 6000
+            score = score + 20000
         elif count_min == 8:
-            score = score - 6000
+            score = score - 20000
         elif count_max == 7:
-            score = score + 3000
+            score = score + 6000
         elif count_min == 7:
-            score = score - 3000
+            score = score - 6000
         elif count_max == 6:
-            score = score + 2000
+            score = score + 1500
         elif count_min == 6:
-            score = score - 2000
+            score = score - 1500
         elif count_max == 5:
-            score = score + 1000
+            score = score + 400
         elif count_min == 5:
-            score = score - 1000
+            score = score - 400
         elif count_max == 4:
-            score = score + 600
-        elif count_min == 4:
-            score = score - 600
-        elif count_max == 3:
-            score = score + 300
-        elif count_min == 3:
-            score = score - 300
-        elif count_max == 2:
             score = score + 100
-        elif count_min == 2:
+        elif count_min == 4:
             score = score - 100
+        elif count_max == 3:
+            score = score + 25
+        elif count_min == 3:
+            score = score - 25
+        elif count_max == 2:
+            score = score + 5
+        elif count_min == 2:
+            score = score - 5
         elif count_max == 1:
-            score = score + 10
+            score = score + 1
         elif count_min == 1:
-            score = score - 10
+            score = score - 1
         return score
 
     # e2 heuristic function
@@ -490,10 +512,10 @@ class Game:
         result = self.is_end()
         # min win
         if result == 'X':
-            return -100
+            return -500000
         # max win
         elif result == 'O':
-            return 100
+            return 500000
 
         value = self.calculatePossibleWins2('0', 'X')
         return value
@@ -514,9 +536,9 @@ class Game:
         # 100  - loss for 'X' win for '0'
         # We're initially setting it to 50000 or -50000 as worse than the worst case:
 
-        value = 50000
+        value = 500000
         if max:
-            value = -50000
+            value = -500000
         # if not self.checkHasEmpty():
         #     value = self.heuristic1()
         x = None
@@ -558,7 +580,7 @@ class Game:
                                 x = i
                                 y = j
                         else:
-                            v = self.heuristic1()
+                            v = self.heuristic2()
                             if v < value:
                                 value = v
                                 x = i
@@ -581,9 +603,9 @@ class Game:
         # 100 - loss for 'X'
         # We're initially setting it to 50000 or -50000 as worse than the worst case:
 
-        value = 50000
+        value = 500000
         if max:
-            value = -50000
+            value = -500000
 
         # if not self.checkHasEmpty() or depth == 0:
         #     value = self.heuristic1()
@@ -763,7 +785,7 @@ def validate_Input():
         temp = input("Please enter max allowed time : ")
         if is_valid_float(temp) and is_valid_bound(temp):
             t = int(temp)
-            time_interrupt = t * 9 / 10
+            time_interrupt = t * 99 / 100
             break
 
     # if all variables have been set
