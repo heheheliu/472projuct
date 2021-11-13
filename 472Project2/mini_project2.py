@@ -52,14 +52,14 @@ class Game:
     def initialize_game(self):
 
         for i in range(n):
-            row = [];
+            row = []
             for j in range(n):
                 # add bloc '*'
-                for b_loc in self.b_locs:
-                    if b_loc == (i, j):
-                        row.append('*')
-                    else:
-                        row.append('.')
+
+                if (i, j) in self.b_locs:
+                    row.append('*')
+                else:
+                    row.append('.')
 
             self.current_state.append(row)
         # Player X always plays first
