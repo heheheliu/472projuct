@@ -7,6 +7,7 @@ import numpy as np
 
 # global variables
 global n, b, b_locs, s, d1, d2, t, a, p1e, p2e, player1, player2
+
 # global time variables
 global start, time_interrupt
 # states count
@@ -36,8 +37,9 @@ class Game:
     AI = 3
     E1 = 4
     E2 = 5
-    e1_Win = 0
-    e2_Win = 0
+    e1_win = 0
+    e2_win = 0
+
     total_Evaluation_Time = 0
     total_moves = 0
     total_heuristic_eval_num = 0
@@ -306,21 +308,21 @@ class Game:
             count = 0
 
     #  who wins ?
-    def check_end(self, f=None):
+    def check_end(self,  f=None):
         self.result = self.is_end()
         # Printing the appropriate message if the game has ended
         if self.result is not None:
             if self.result == 'X':
-                self.e1_Win += 1
+                self.e1_win += 1
                 print('The winner is X !!!')
                 f.write('\nThe winner is X !!! \n')
             elif self.result == 'O':
-                self.e2_Win += 1
+                self.e2_win += 1
                 print('The winner is O !!!')
                 f.write('\nThe winner is O !!! \n')
             elif self.result == '.':
-                self.e1_Win = 1
-                self.e2_Win = 1
+                self.e1_win += 1
+                self.e2_win += 1
                 print("It's a tie !!!")
                 f.write("\nIt's a tie! \n")
             # print(f'the total number of {len(data_run)} states: ')
@@ -1046,24 +1048,24 @@ def is_valid_letter(px):
         return False
 
 
-# def final_summary(f=None, g=Game()):
-#     print("6(b)i:   Average evaluation time: {}".format(g.total_Evaluation_Time / g.total_moves))
-#     print("6(b)ii   Total heuristic evaluations: {}".format(g.total_heuristic_eval_num))
-#     print("6(b)iii   Evaluations by depth: {}".format(g.total_eval_depth))
-#     n = 0
-#     t = 0
-#     for i in g.self.total_eval_depth.keys():
-#         t += i * g.self.total_eval_depth.get(i)
-#         n += g.self.total_eval_depth.get(i)
-#     ad = t / n
-#     print("6(b)iv   Average evaluation depth: {}".format(ad))
-#     print("6(b)vi:  Total moves: {}".format(g.total_moves))
+def final_summary(f_score, g, a):
+
+    print(f'n={g.n} b={g.b} s={g.s} t={g.t}', file=f_score)
+
+    print(f'Player 1: d={g.d1} a={a}', file=f_score)
+    print(f'Player 1: d={g.d2} a={a}', file=f_score)
+
+    print("Total wins for heuristic e1: {} ({}%) (regular)".format(g.e1_win, g.e1_win * 100 / (g.e1_win + g.e2_win)),
+          file=f_score)
+    print("Total wins for heuristic e2: {} ({}%) (defensive)".format(g.e2_win, g.e2_win * 100 / (g.e1_win + g.e2_win)),
+          file=f_score)
+
 
 
 
 
 def main():
-    global n, b, b_locs, s, d1, d2, t, a, p1e, p2e, player1, player2
+    global n, b, b_locs, s, d1, d2, t, a, p1e, p2e, player1, player2, e1_win, e2_win
     # user input
     valid = validate_Input()
     file_name = 'gameTrace-{}{}{}{}.txt'.format(n, b, s, t)
@@ -1104,11 +1106,15 @@ def main():
         print("6(b)iv   Average evaluation depth: {}".format(ad))
         print("6(b)vi:  Total moves: {}".format(g.total_moves))
 
-        print("6(b)i:   Average evaluation time: {}".format(g.total_Evaluation_Time / g.total_moves),file=f)
-        print("6(b)ii   Total heuristic evaluations: {}".format(g.total_heuristic_eval_num),file=f)
-        print("6(b)iii   Evaluations by depth: {}".format(g.total_eval_depth),file=f)
-        print("6(b)iv   Average evaluation depth: {}".format(ad),file=f)
-        print("6(b)vi:  Total moves: {}".format(g.total_moves),file=f)
+        print("6(b)i:   Average evaluation time: {}".format(g.total_Evaluation_Time / g.total_moves), file=f)
+        print("6(b)ii   Total heuristic evaluations: {}".format(g.total_heuristic_eval_num), file=f)
+        print("6(b)iii   Evaluations by depth: {}".format(g.total_eval_depth), file=f)
+        print("6(b)iv   Average evaluation depth: {}".format(ad), file=f)
+        print("6(b)vi:  Total moves: {}".format(g.total_moves), file=f)
+
+        final_summary(f_score=f_score, g=g, a=a)
+
+
 
 
 if __name__ == "__main__":
