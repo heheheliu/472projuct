@@ -834,13 +834,13 @@ class Game:
                     if j == i:
                         count += 1
 
-                count_arr[i] = count
-                if self.total_eval_depth.get(i) is None:
-                    self.total_eval_depth[i] = count
+                count_arr[i+1] = count
+                if self.total_eval_depth.get(i+1) is None:
+                    self.total_eval_depth[i+1] = count
                 else:
-                    self.total_eval_depth[i] = self.total_eval_depth[i] + count
+                    self.total_eval_depth[i+1] = self.total_eval_depth[i+1] + count
                 sum += count
-                ad += i * count
+                ad += (i+1) * count
             if sum != 0:
                 ad = ad / sum
             else:
