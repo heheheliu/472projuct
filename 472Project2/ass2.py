@@ -39,6 +39,7 @@ class Game:
     E2 = 5
     e1_win = 0
     e2_win = 0
+    game_times = 0
 
     total_Evaluation_Time = 0
     total_moves = 0
@@ -773,6 +774,7 @@ class Game:
         return (value, x, y)
 
     def play(self, algo=None, player_x=None, player_o=None, p1e=E1, p2e=E2, f=None):
+        self.game_times += 1
         global start, time_interrupt
         self.reset_data()
 
@@ -1053,13 +1055,25 @@ def final_summary(f_score, g, a):
     print(f'n={g.n} b={g.b} s={g.s} t={g.t}', file=f_score)
 
     print(f'Player 1: d={g.d1} a={a}', file=f_score)
-    print(f'Player 1: d={g.d2} a={a}', file=f_score)
+    print(f'Player 2: d={g.d2} a={a}', file=f_score)
+
+    print(f'{g.game_times} game(s)', file=f_score)
 
     print("Total wins for heuristic e1: {} ({}%) (regular)".format(g.e1_win, g.e1_win * 100 / (g.e1_win + g.e2_win)),
           file=f_score)
     print("Total wins for heuristic e2: {} ({}%) (defensive)".format(g.e2_win, g.e2_win * 100 / (g.e1_win + g.e2_win)),
           file=f_score)
-
+    print("i:   Average evaluation time: {}".format(g.total_Evaluation_Time / g.game_times), file=f_score)
+    print("ii   Total heuristic evaluations: {}".format(g.total_heuristic_eval_num), file=f_score)
+    print("iii   Evaluations by depth: {}".format(g.total_eval_depth), file=f_score)
+    n = 0
+    t = 0
+    for i in g.total_eval_depth.keys():
+        t += i * g.total_eval_depth.get(i)
+        n += g.total_eval_depth.get(i)
+    ad = t / n
+    print("iv   Average evaluation depth: {}".format(ad/g.game_times), file=f_score)
+    print("vi:  Average Total moves: {}".format(g.total_moves/g.game_times), file=f_score)
 
 
 
@@ -1089,6 +1103,7 @@ def main():
         g = Game(n, b, b_locs, s, d1, d2, t, recommend=True)
         g.draw_board(f=f)
         g.play(algo=algo, player_x=player1, player_o=player2, p1e=p1e, p2e=p2e, f=f)
+
         # g.play(algo=Game.MINIMAX, player_x=Game.HUMAN, player_o=Game.HUMAN)
         # g.play(algo=Game.MINIMAX, player_x=Game.AI, player_o=Game.HUMAN)
         # g.play(algo=Game.ALPHABETA, player_x=Game.AI, player_o=Game.AI)
