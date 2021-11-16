@@ -696,6 +696,10 @@ class Game:
         for i in range(0, n):
             for j in range(0, n):
                 if self.current_state[i][j] == '.':
+                    if x is None:
+                        x = i
+                    if y is None:
+                        y = j
                     if depth < depth_max:
                         if max:
                             interrupt = time.time() - start
@@ -754,9 +758,9 @@ class Game:
                                 value = v
                                 x = i
                                 y = j
-                    if x is None or y is None:
-                        x = i
-                        y = j
+                    # if x is None or y is None:
+                    #     x = i
+                    #     y = j
                     if max:  # if parent alpha >= child beta, prune the child right branch
                         if value >= beta:
                             return (value, x, y)
@@ -1103,13 +1107,21 @@ def main():
         g = Game(n, b, b_locs, s, d1, d2, t, recommend=True)
         g.draw_board(f=f)
         g.play(algo=algo, player_x=player1, player_o=player2, p1e=p1e, p2e=p2e, f=f)
-
+        # g.play(algo=algo, player_x=player1, player_o=player2, p1e=p1e, p2e=p2e, f=f)
+        # g.play(algo=algo, player_x=player1, player_o=player2, p1e=p1e, p2e=p2e, f=f)
+        # g.play(algo=algo, player_x=player1, player_o=player2, p1e=p1e, p2e=p2e, f=f)
+        # g.play(algo=algo, player_x=player1, player_o=player2, p1e=p1e, p2e=p2e, f=f)
+        # g.play(algo=algo, player_x=player1, player_o=player2, p1e=p1e, p2e=p2e, f=f)
+        # g.play(algo=algo, player_x=player1, player_o=player2, p1e=p1e, p2e=p2e, f=f)
+        # g.play(algo=algo, player_x=player1, player_o=player2, p1e=p1e, p2e=p2e, f=f)
+        # g.play(algo=algo, player_x=player1, player_o=player2, p1e=p1e, p2e=p2e, f=f)
+        # g.play(algo=algo, player_x=player1, player_o=player2, p1e=p1e, p2e=p2e, f=f)
         # g.play(algo=Game.MINIMAX, player_x=Game.HUMAN, player_o=Game.HUMAN)
         # g.play(algo=Game.MINIMAX, player_x=Game.AI, player_o=Game.HUMAN)
         # g.play(algo=Game.ALPHABETA, player_x=Game.AI, player_o=Game.AI)
         # g.play(algo=Game.ALPHABETA, player_x=Game.AI, player_o=Game.HUMAN)
         # g.play(algo=Game.ALPHABETA, player_x=Game.HUMAN, player_o=Game.HUMAN)
-        print("6(b)i:   Average evaluation time: {}".format(g.total_Evaluation_Time / g.total_moves))
+        print("6(b)i   Average evaluation time: {}".format(g.total_Evaluation_Time / g.total_moves))
         print("6(b)ii   Total heuristic evaluations: {}".format(g.total_heuristic_eval_num))
         print("6(b)iii   Evaluations by depth: {}".format(g.total_eval_depth))
         n = 0
@@ -1119,13 +1131,13 @@ def main():
             n += g.total_eval_depth.get(i)
         ad = t / n
         print("6(b)iv   Average evaluation depth: {}".format(ad))
-        print("6(b)vi:  Total moves: {}".format(g.total_moves))
+        print("6(b)vi  Total moves: {}".format(g.total_moves))
 
-        print("6(b)i:   Average evaluation time: {}".format(g.total_Evaluation_Time / g.total_moves), file=f)
+        print("6(b)i   Average evaluation time: {}".format(g.total_Evaluation_Time / g.total_moves), file=f)
         print("6(b)ii   Total heuristic evaluations: {}".format(g.total_heuristic_eval_num), file=f)
         print("6(b)iii   Evaluations by depth: {}".format(g.total_eval_depth), file=f)
         print("6(b)iv   Average evaluation depth: {}".format(ad), file=f)
-        print("6(b)vi:  Total moves: {}".format(g.total_moves), file=f)
+        print("6(b)vi  Total moves: {}".format(g.total_moves), file=f)
 
         final_summary(f_score=f_score, g=g, a=a)
 
