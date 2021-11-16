@@ -1,0 +1,1367 @@
+ n=8, b=6, s=5, d1=6, d2=6, t=5
+
+ blocs: [(1, 4), (2, 2), (3, 0), (4, 3), (5, 5), (6, 5)]
+
+Player 1: AI d=6 a=True e1(regular)
+Player 2: AI d=6 a=True e2(defensive)
+ 
+  A  B  C  D  E  F  G  H
+0|.  .  .  .  .  .  .  .  
+1|.  .  .  .  *  .  .  .  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .   
+(move  #1)
+ 
+  A  B  C  D  E  F  G  H
+0|.  .  .  .  .  .  .  .  
+1|.  .  .  .  *  .  .  .  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.950377s 
+
+Player X under AI control plays: x = 0, y = A 
+
+ii Heuaristic evaluation: 263416 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 17, 4: 147, 5: 3948, 6: 26394, 7: 232908} 
+
+iv Average evaluation depth: 6.87 
+
+ 
+(move  #2)
+ 
+  A  B  C  D  E  F  G  H
+0|X  .  .  .  .  .  .  .  
+1|.  .  .  .  *  .  .  .  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.950983s 
+
+Player O under AI control plays: x = 0, y = B 
+
+ii Heuaristic evaluation: 255654 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 9, 4: 213, 5: 2208, 6: 46825, 7: 206397} 
+
+iv Average evaluation depth: 6.8 
+
+ 
+(move  #3)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  .  .  .  .  .  .  
+1|.  .  .  .  *  .  .  .  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.95474s 
+
+Player X under AI control plays: x = 0, y = C 
+
+ii Heuaristic evaluation: 104956 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 8, 4: 66, 5: 1579, 6: 12801, 7: 90500} 
+
+iv Average evaluation depth: 6.85 
+
+ 
+(move  #4)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  .  .  .  .  .  
+1|.  .  .  .  *  .  .  .  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9511881s 
+
+Player O under AI control plays: x = 0, y = D 
+
+ii Heuaristic evaluation: 65331 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 3, 4: 65, 5: 596, 6: 12872, 7: 51793} 
+
+iv Average evaluation depth: 6.78 
+
+ 
+(move  #5)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  .  .  .  .  
+1|.  .  .  .  *  .  .  .  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9521399s 
+
+Player X under AI control plays: x = 0, y = E 
+
+ii Heuaristic evaluation: 119284 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 12, 4: 71, 5: 1746, 6: 14781, 7: 102672} 
+
+iv Average evaluation depth: 6.84 
+
+ 
+(move  #6)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  .  .  .  
+1|.  .  .  .  *  .  .  .  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9515922s 
+
+Player O under AI control plays: x = 0, y = F 
+
+ii Heuaristic evaluation: 120238 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 6, 4: 98, 5: 1155, 6: 21029, 7: 97948} 
+
+iv Average evaluation depth: 6.8 
+
+ 
+(move  #7)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  .  .  
+1|.  .  .  .  *  .  .  .  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9503598s 
+
+Player X under AI control plays: x = 0, y = G 
+
+ii Heuaristic evaluation: 119827 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 10, 4: 93, 5: 1813, 6: 16019, 7: 101890} 
+
+iv Average evaluation depth: 6.83 
+
+ 
+(move  #8)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  .  
+1|.  .  .  .  *  .  .  .  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9514492s 
+
+Player O under AI control plays: x = 0, y = H 
+
+ii Heuaristic evaluation: 115710 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 7, 4: 96, 5: 1193, 6: 18247, 7: 96165} 
+
+iv Average evaluation depth: 6.82 
+
+ 
+(move  #9)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|.  .  .  .  *  .  .  .  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.950335s 
+
+Player X under AI control plays: x = 1, y = A 
+
+ii Heuaristic evaluation: 118880 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 9, 4: 137, 5: 1939, 6: 16737, 7: 100056} 
+
+iv Average evaluation depth: 6.82 
+
+ 
+(move  #10)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  .  .  .  *  .  .  .  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9527602s 
+
+Player O under AI control plays: x = 1, y = B 
+
+ii Heuaristic evaluation: 109307 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 8, 4: 105, 5: 1333, 6: 17860, 7: 89999} 
+
+iv Average evaluation depth: 6.81 
+
+ 
+(move  #11)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  .  .  *  .  .  .  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.950386s 
+
+Player X under AI control plays: x = 1, y = C 
+
+ii Heuaristic evaluation: 118778 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 6, 4: 101, 5: 1990, 6: 17097, 7: 99582} 
+
+iv Average evaluation depth: 6.82 
+
+ 
+(move  #12)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  .  *  .  .  .  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9522951s 
+
+Player O under AI control plays: x = 1, y = D 
+
+ii Heuaristic evaluation: 118803 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 7, 4: 137, 5: 1399, 6: 22917, 7: 94341} 
+
+iv Average evaluation depth: 6.78 
+
+ 
+(move  #13)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  .  .  .  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.950556s 
+
+Player X under AI control plays: x = 1, y = F 
+
+ii Heuaristic evaluation: 117000 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 12, 4: 118, 5: 1960, 6: 15388, 7: 99520} 
+
+iv Average evaluation depth: 6.83 
+
+ 
+(move  #14)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  .  .  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.951555s 
+
+Player O under AI control plays: x = 1, y = G 
+
+ii Heuaristic evaluation: 113434 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 8, 4: 139, 5: 1498, 6: 19435, 7: 92352} 
+
+iv Average evaluation depth: 6.8 
+
+ 
+(move  #15)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  .  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.950587s 
+
+Player X under AI control plays: x = 1, y = H 
+
+ii Heuaristic evaluation: 107389 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 16, 4: 136, 5: 2053, 6: 12918, 7: 92264} 
+
+iv Average evaluation depth: 6.84 
+
+ 
+(move  #16)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|.  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9518211s 
+
+Player O under AI control plays: x = 2, y = A 
+
+ii Heuaristic evaluation: 110438 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 23, 4: 134, 5: 1847, 6: 14970, 7: 93462} 
+
+iv Average evaluation depth: 6.83 
+
+ 
+(move  #17)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  .  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9504519s 
+
+Player X under AI control plays: x = 2, y = B 
+
+ii Heuaristic evaluation: 105150 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 16, 4: 140, 5: 1977, 6: 16003, 7: 87012} 
+
+iv Average evaluation depth: 6.81 
+
+ 
+(move  #18)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  .  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.951834s 
+
+Player O under AI control plays: x = 2, y = D 
+
+ii Heuaristic evaluation: 107212 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 7, 4: 133, 5: 1754, 6: 17641, 7: 87675} 
+
+iv Average evaluation depth: 6.8 
+
+ 
+(move  #19)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  .  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9508631s 
+
+Player X under AI control plays: x = 2, y = E 
+
+ii Heuaristic evaluation: 114319 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 15, 4: 173, 5: 2009, 6: 15764, 7: 96356} 
+
+iv Average evaluation depth: 6.82 
+
+ 
+(move  #20)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  .  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9511218s 
+
+Player O under AI control plays: x = 2, y = F 
+
+ii Heuaristic evaluation: 110889 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 21, 4: 161, 5: 2435, 6: 13065, 7: 95205} 
+
+iv Average evaluation depth: 6.83 
+
+ 
+(move  #21)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  .  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9507971s 
+
+Player X under AI control plays: x = 2, y = G 
+
+ii Heuaristic evaluation: 112454 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 25, 4: 155, 5: 2356, 6: 11612, 7: 98304} 
+
+iv Average evaluation depth: 6.85 
+
+ 
+(move  #22)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  .  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9514439s 
+
+Player O under AI control plays: x = 2, y = H 
+
+ii Heuaristic evaluation: 110985 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 34, 4: 149, 5: 2852, 6: 9089, 7: 98859} 
+
+iv Average evaluation depth: 6.86 
+
+ 
+(move  #23)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  .  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9513431s 
+
+Player X under AI control plays: x = 3, y = B 
+
+ii Heuaristic evaluation: 99785 
+
+iii Evaluations by depth: {1: 1, 2: 2, 3: 39, 4: 185, 5: 2028, 6: 13410, 7: 84120} 
+
+iv Average evaluation depth: 6.82 
+
+ 
+(move  #24)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  .  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9515951s 
+
+Player O under AI control plays: x = 3, y = C 
+
+ii Heuaristic evaluation: 113301 
+
+iii Evaluations by depth: {1: 1, 2: 4, 3: 49, 4: 240, 5: 2919, 6: 14881, 7: 95207} 
+
+iv Average evaluation depth: 6.81 
+
+ 
+(move  #25)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  .  .  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9525402s 
+
+Player X under AI control plays: x = 3, y = E 
+
+ii Heuaristic evaluation: 96125 
+
+iii Evaluations by depth: {1: 1, 2: 7, 3: 36, 4: 720, 5: 1631, 6: 25634, 7: 68096} 
+
+iv Average evaluation depth: 6.67 
+
+ 
+(move  #26)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  .  X  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9508362s 
+
+Player O under AI control plays: x = 3, y = D 
+
+ii Heuaristic evaluation: 101108 
+
+iii Evaluations by depth: {1: 1, 2: 3, 3: 63, 4: 158, 5: 3032, 6: 11235, 7: 86616} 
+
+iv Average evaluation depth: 6.82 
+
+ 
+(move  #27)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  .  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.952656s 
+
+Player X under AI control plays: x = 3, y = F 
+
+ii Heuaristic evaluation: 94584 
+
+iii Evaluations by depth: {1: 1, 2: 1, 3: 19, 4: 81, 5: 1504, 6: 9544, 7: 83434} 
+
+iv Average evaluation depth: 6.86 
+
+ 
+(move  #28)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  .  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.952188s 
+
+Player O under AI control plays: x = 3, y = G 
+
+ii Heuaristic evaluation: 82274 
+
+iii Evaluations by depth: {1: 1, 2: 3, 3: 38, 4: 321, 5: 2243, 6: 16168, 7: 63500} 
+
+iv Average evaluation depth: 6.74 
+
+ 
+(move  #29)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  .  
+4|.  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9513922s 
+
+Player X under AI control plays: x = 4, y = A 
+
+ii Heuaristic evaluation: 106635 
+
+iii Evaluations by depth: {1: 1, 2: 4, 3: 64, 4: 258, 5: 2863, 6: 14357, 7: 89088} 
+
+iv Average evaluation depth: 6.8 
+
+ 
+(move  #30)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  .  
+4|X  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9514999s 
+
+Player O under AI control plays: x = 3, y = H 
+
+ii Heuaristic evaluation: 117453 
+
+iii Evaluations by depth: {1: 1, 2: 10, 3: 54, 4: 614, 5: 3204, 6: 24652, 7: 88918} 
+
+iv Average evaluation depth: 6.72 
+
+ 
+(move  #31)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  .  .  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.951473s 
+
+Player X under AI control plays: x = 4, y = C 
+
+ii Heuaristic evaluation: 100515 
+
+iii Evaluations by depth: {1: 1, 2: 9, 3: 81, 4: 355, 5: 3352, 6: 18309, 7: 78408} 
+
+iv Average evaluation depth: 6.74 
+
+ 
+(move  #32)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  .  X  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9534249s 
+
+Player O under AI control plays: x = 4, y = B 
+
+ii Heuaristic evaluation: 103805 
+
+iii Evaluations by depth: {1: 1, 2: 12, 3: 51, 4: 326, 5: 2879, 6: 24894, 7: 75642} 
+
+iv Average evaluation depth: 6.69 
+
+ 
+(move  #33)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  .  .  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9503689s 
+
+Player X under AI control plays: x = 4, y = F 
+
+ii Heuaristic evaluation: 88063 
+
+iii Evaluations by depth: {1: 1, 2: 7, 3: 41, 4: 460, 5: 2225, 6: 19709, 7: 65620} 
+
+iv Average evaluation depth: 6.71 
+
+ 
+(move  #34)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  .  X  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9515438s 
+
+Player O under AI control plays: x = 4, y = E 
+
+ii Heuaristic evaluation: 85579 
+
+iii Evaluations by depth: {1: 1, 2: 6, 3: 43, 4: 416, 5: 2811, 6: 20951, 7: 61351} 
+
+iv Average evaluation depth: 6.67 
+
+ 
+(move  #35)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  .  .  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.950701s 
+
+Player X under AI control plays: x = 4, y = H 
+
+ii Heuaristic evaluation: 92333 
+
+iii Evaluations by depth: {1: 1, 2: 4, 3: 51, 4: 319, 5: 3260, 6: 21468, 7: 67230} 
+
+iv Average evaluation depth: 6.68 
+
+ 
+(move  #36)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  .  X  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.951076s 
+
+Player O under AI control plays: x = 4, y = G 
+
+ii Heuaristic evaluation: 72225 
+
+iii Evaluations by depth: {1: 1, 2: 8, 3: 47, 4: 445, 5: 2619, 6: 18734, 7: 50371} 
+
+iv Average evaluation depth: 6.65 
+
+ 
+(move  #37)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|.  .  .  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.950361s 
+
+Player X under AI control plays: x = 5, y = C 
+
+ii Heuaristic evaluation: 90988 
+
+iii Evaluations by depth: {1: 2, 2: 23, 3: 70, 4: 649, 5: 3661, 6: 24231, 7: 62352} 
+
+iv Average evaluation depth: 6.63 
+
+ 
+(move  #38)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|.  .  X  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.951247s 
+
+Player O under AI control plays: x = 5, y = A 
+
+ii Heuaristic evaluation: 98345 
+
+iii Evaluations by depth: {1: 1, 2: 9, 3: 77, 4: 454, 5: 4066, 6: 30168, 7: 63570} 
+
+iv Average evaluation depth: 6.59 
+
+ 
+(move  #39)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  .  X  .  .  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9519351s 
+
+Player X under AI control plays: x = 5, y = E 
+
+ii Heuaristic evaluation: 88236 
+
+iii Evaluations by depth: {1: 2, 2: 23, 3: 57, 4: 610, 5: 3309, 6: 25267, 7: 58968} 
+
+iv Average evaluation depth: 6.61 
+
+ 
+(move  #40)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  .  X  .  X  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.951257s 
+
+Player O under AI control plays: x = 5, y = D 
+
+ii Heuaristic evaluation: 87106 
+
+iii Evaluations by depth: {1: 2, 2: 24, 3: 100, 4: 510, 5: 4087, 6: 28108, 7: 54275} 
+
+iv Average evaluation depth: 6.56 
+
+ 
+(move  #41)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  .  X  O  X  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9502919s 
+
+Player X under AI control plays: x = 5, y = B 
+
+ii Heuaristic evaluation: 100138 
+
+iii Evaluations by depth: {1: 10, 2: 17, 3: 149, 4: 604, 5: 5089, 6: 20889, 7: 73380} 
+
+iv Average evaluation depth: 6.66 
+
+ 
+(move  #42)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  .  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.673717s 
+
+Player O under AI control plays: x = 5, y = G 
+
+ii Heuaristic evaluation: 97638 
+
+iii Evaluations by depth: {1: 17, 2: 16, 3: 290, 4: 575, 5: 6781, 6: 15280, 7: 74679} 
+
+iv Average evaluation depth: 6.67 
+
+ 
+(move  #43)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  .  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.9504371s 
+
+Player X under AI control plays: x = 5, y = H 
+
+ii Heuaristic evaluation: 121857 
+
+iii Evaluations by depth: {1: 14, 2: 16, 3: 210, 4: 715, 5: 6283, 6: 42229, 7: 72390} 
+
+iv Average evaluation depth: 6.52 
+
+ 
+(move  #44)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  X  
+6|.  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 4.951067s 
+
+Player O under AI control plays: x = 6, y = A 
+
+ii Heuaristic evaluation: 111958 
+
+iii Evaluations by depth: {1: 6, 2: 20, 3: 140, 4: 1047, 5: 9625, 6: 14441, 7: 86679} 
+
+iv Average evaluation depth: 6.66 
+
+ 
+(move  #45)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  X  
+6|O  .  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 2.654767s 
+
+Player X under AI control plays: x = 6, y = B 
+
+ii Heuaristic evaluation: 60042 
+
+iii Evaluations by depth: {1: 14, 2: 13, 3: 181, 4: 387, 5: 3726, 6: 19481, 7: 36240} 
+
+iv Average evaluation depth: 6.52 
+
+ 
+(move  #46)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  X  
+6|O  X  .  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 3.444674s 
+
+Player O under AI control plays: x = 6, y = C 
+
+ii Heuaristic evaluation: 80364 
+
+iii Evaluations by depth: {1: 13, 2: 25, 3: 243, 4: 1116, 5: 8578, 6: 10315, 7: 60074} 
+
+iv Average evaluation depth: 6.6 
+
+ 
+(move  #47)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  X  
+6|O  X  O  .  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 0.9479699s 
+
+Player X under AI control plays: x = 6, y = D 
+
+ii Heuaristic evaluation: 22830 
+
+iii Evaluations by depth: {1: 12, 2: 11, 3: 129, 4: 207, 5: 1767, 6: 6700, 7: 14004} 
+
+iv Average evaluation depth: 6.5 
+
+ 
+(move  #48)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  X  
+6|O  X  O  X  .  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 0.981791s 
+
+Player O under AI control plays: x = 6, y = E 
+
+ii Heuaristic evaluation: 24030 
+
+iii Evaluations by depth: {1: 11, 2: 19, 3: 155, 4: 537, 5: 3262, 6: 3726, 7: 16320} 
+
+iv Average evaluation depth: 6.47 
+
+ 
+(move  #49)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  X  
+6|O  X  O  X  O  *  .  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 0.2864618s 
+
+Player X under AI control plays: x = 6, y = G 
+
+ii Heuaristic evaluation: 5778 
+
+iii Evaluations by depth: {1: 10, 2: 9, 3: 80, 4: 69, 5: 516, 6: 1234, 7: 3860} 
+
+iv Average evaluation depth: 6.5 
+
+ 
+(move  #50)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  X  
+6|O  X  O  X  O  *  X  .  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 0.0789418s 
+
+Player O under AI control plays: x = 6, y = H 
+
+ii Heuaristic evaluation: 2020 
+
+iii Evaluations by depth: {1: 9, 2: 8, 3: 63, 4: 48, 5: 380, 6: 372, 7: 1140} 
+
+iv Average evaluation depth: 6.2 
+
+ 
+(move  #51)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  X  
+6|O  X  O  X  O  *  X  O  
+7|.  .  .  .  .  .  .  .  
+
+i Evaluation time: 0.033334s 
+
+Player X under AI control plays: x = 7, y = A 
+
+ii Heuaristic evaluation: 959 
+
+iii Evaluations by depth: {1: 8, 2: 7, 3: 48, 4: 35, 5: 192, 6: 165, 7: 504} 
+
+iv Average evaluation depth: 6.03 
+
+ 
+(move  #52)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  X  
+6|O  X  O  X  O  *  X  O  
+7|X  .  .  .  .  .  .  .  
+
+i Evaluation time: 0.0083249s 
+
+Player O under AI control plays: x = 7, y = B 
+
+ii Heuaristic evaluation: 330 
+
+iii Evaluations by depth: {1: 7, 2: 6, 3: 35, 4: 24, 5: 105, 6: 48, 7: 105} 
+
+iv Average evaluation depth: 5.36 
+
+ 
+(move  #53)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  X  
+6|O  X  O  X  O  *  X  O  
+7|X  O  .  .  .  .  .  .  
+
+i Evaluation time: 0.0003419s 
+
+Player X under AI control plays: x = 7, y = C 
+
+ii Heuaristic evaluation: 78 
+
+iii Evaluations by depth: {1: 6, 2: 0, 3: 24, 4: 0, 5: 48} 
+
+iv Average evaluation depth: 4.08 
+
+ 
+(move  #54)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  X  
+6|O  X  O  X  O  *  X  O  
+7|X  O  X  .  .  .  .  .  
+
+i Evaluation time: 6.01e-05s 
+
+Player O under AI control plays: x = 7, y = D 
+
+ii Heuaristic evaluation: 12 
+
+iii Evaluations by depth: {1: 0, 2: 4, 3: 0, 4: 8} 
+
+iv Average evaluation depth: 3.33 
+
+ 
+(move  #55)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  X  
+6|O  X  O  X  O  *  X  O  
+7|X  O  X  O  .  .  .  .  
+
+i Evaluation time: 5.32e-05s 
+
+Player X under AI control plays: x = 7, y = E 
+
+ii Heuaristic evaluation: 12 
+
+iii Evaluations by depth: {1: 4, 2: 0, 3: 8} 
+
+iv Average evaluation depth: 2.33 
+
+ 
+(move  #56)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  X  
+6|O  X  O  X  O  *  X  O  
+7|X  O  X  O  X  .  .  .  
+
+i Evaluation time: 2.29e-05s 
+
+Player O under AI control plays: x = 7, y = F 
+
+ii Heuaristic evaluation: 2 
+
+iii Evaluations by depth: {1: 0, 2: 2} 
+
+iv Average evaluation depth: 2.0 
+
+ 
+(move  #57)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  X  
+6|O  X  O  X  O  *  X  O  
+7|X  O  X  O  X  O  .  .  
+
+i Evaluation time: 2.41e-05s 
+
+Player X under AI control plays: x = 7, y = G 
+
+ii Heuaristic evaluation: 2 
+
+iii Evaluations by depth: {1: 2} 
+
+iv Average evaluation depth: 1.0 
+
+ 
+(move  #58)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  X  
+6|O  X  O  X  O  *  X  O  
+7|X  O  X  O  X  O  X  .  
+
+i Evaluation time: 1.79e-05s 
+
+Player O under AI control plays: x = 7, y = H 
+
+ii Heuaristic evaluation: 0 
+
+iii Evaluations by depth: {} 
+
+iv Average evaluation depth: 0.0 
+
+ 
+(move  #59)
+ 
+  A  B  C  D  E  F  G  H
+0|X  O  X  O  X  O  X  O  
+1|X  O  X  O  *  X  O  X  
+2|O  X  *  O  X  O  X  O  
+3|*  X  O  O  X  X  O  O  
+4|X  O  X  *  O  X  O  X  
+5|O  X  X  O  X  *  O  X  
+6|O  X  O  X  O  *  X  O  
+7|X  O  X  O  X  O  X  O  
+It's a tie! 
+6(b)i   Average evaluation time: 3.830836818644066
+6(b)ii   Total heuristic evaluations: 5085964
+6(b)iii   Evaluations by depth: {1: 186, 2: 354, 3: 3014, 4: 15260, 5: 139685, 6: 886064, 7: 4041401}
+6(b)iv   Average evaluation depth: 6.75891374771823
+6(b)vi  Total moves: 59

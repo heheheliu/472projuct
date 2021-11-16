@@ -1,0 +1,11 @@
+n=4 b=4 s=3 t=5
+Player 1: d=6 a=False
+Player 2: d=6 a=False
+10 game(s)
+Total wins for heuristic e1: 0 (0.0%) (regular)
+Total wins for heuristic e2: 10 (100.0%) (defensive)
+i:   Average evaluation time: 2.51478044
+ii   Total heuristic evaluations: 187322
+iii   Evaluations by depth: {1: 40, 2: 179, 3: 835, 4: 3595, 5: 13649, 6: 44522, 7: 124502}
+iv   Average evaluation depth: 0.653513201866305
+vi:  Average Total moves: 2.2
