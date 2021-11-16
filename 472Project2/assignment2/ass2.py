@@ -696,6 +696,10 @@ class Game:
         for i in range(0, n):
             for j in range(0, n):
                 if self.current_state[i][j] == '.':
+                    if x is None:
+                        x = i
+                    if y is None:
+                        y = j
                     if depth < depth_max:
                         if max:
                             interrupt = time.time() - start
@@ -754,9 +758,9 @@ class Game:
                                 value = v
                                 x = i
                                 y = j
-                    if x is None or y is None:
-                        x = i
-                        y = j
+                    # if x is None or y is None:
+                    #     x = i
+                    #     y = j
                     if max:  # if parent alpha >= child beta, prune the child right branch
                         if value >= beta:
                             return (value, x, y)
