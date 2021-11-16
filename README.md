@@ -37,24 +37,24 @@ Generated 2 types of output ﬁles: game traces and a scoreboard with statistics
 3.	The parameters of each player: the values human or AI, and in the case of an AI, the corresponding values of the depth of the search (d1 or d2), the corresponding values of     the alphabeta vs minimax of the search (a1 or a2, or both) and which heuristic was used (e1 or e2).
 4.	A display of the initial conﬁguration of the board.
 5.
-(a) the move taken (eg. B 4)
-(b) the new conﬁguration of the board
-and statistics:
-i.	The evaluation time of the heuristic (in seconds)
-ii.	The number of states evaluated by the heuristic function
-iii.	The number of states evaluated at each depth (consider the root to be at depth 0)
-The number of states evaluated at each depth. 
-iv.	The average depth (AD) of the heuristic evaluation in the tree
-v.	The average recursion depth (ARD) at the current state
-6.	Then, at the end of the game, display:
-(a) the winner
-(b) for each heuristic, the following statistics:
-i.	The average evaluation time of the heuristic for each state evaluated (in seconds)
-ii.	The number of states evaluated by the heuristic function during the entire game
-iii. The average of the per-move average depth of the heuristic evaluation in the tree – i.e. the average of statistic 4(c)iii above for all moves
-iv.	The total number of states evaluated at each depth during the entire game
-v.	The average of the per-move average recursion depth 
-vi.	The total number of moves in the game
+(a) the move taken (eg. B 4)\
+(b) the new conﬁguration of the board\
+and statistics:\
+i.	The evaluation time of the heuristic (in seconds)\
+ii.	The number of states evaluated by the heuristic function\
+iii.	The number of states evaluated at each depth (consider the root to be at depth 0)\
+The number of states evaluated at each depth. \
+iv.	The average depth (AD) of the heuristic evaluation in the tree\
+v.	The average recursion depth (ARD) at the current state\
+6.	Then, at the end of the game, display:\
+(a) the winner\
+(b) for each heuristic, the following statistics:\
+i.	The average evaluation time of the heuristic for each state evaluated (in seconds)\
+ii.	The number of states evaluated by the heuristic function during the entire game\
+iii. The average of the per-move average depth of the heuristic evaluation in the tree – i.e. the average of statistic 4(c)iii above for all moves\
+iv.	The total number of states evaluated at each depth during the entire game\
+v.	The average of the per-move average recursion depth \
+vi.	The total number of moves in the game\
 
 ### Scoreboard File
 Display the following information:
