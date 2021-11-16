@@ -14,15 +14,15 @@ a skeleton code which implements a standard tic-tac-toe game (i.e. with n=3, b=0
 ### 2.develop 2 heuristics e1 and e2 
 e1 be a very simple but fast heuristic, and e2 be more sophisticated and complex to compute.
 ### 3.Game Parameters: 
-(a) the size of the board – n – an integer in [3..10]
-(b) the number of blocs – b – an integer in [0..2n]
-(c) the positions of the blocs – b board coordinates
-(d) the winning line-up size – s – an integer in [3..n]
-(e) the maximum depth of the adversarial search for player 1 and for player 2 – 2 integers d1 and d2 
-(f) the maximum allowed time (in seconds) for your program to return a move – t
-(g) a Boolean to force the use of either minimax (FALSE) or alphabeta (TRUE) – a 
-(h) the play modes: 
-H-H, H-AI, AI-H and AI-AI.
+(a) the size of the board – n – an integer in [3..10]\
+(b) the number of blocs – b – an integer in [0..2n]\
+(c) the positions of the blocs – b board coordinates\
+(d) the winning line-up size – s – an integer in [3..n]\
+(e) the maximum depth of the adversarial search for player 1 and for player 2 – 2 integers d1 and d2 \
+(f) the maximum allowed time (in seconds) for your program to return a move – t\
+(g) a Boolean to force the use of either minimax (FALSE) or alphabeta (TRUE) – a \
+(h) the play modes: \
+H-H, H-AI, AI-H and AI-AI.\
 
 
 
