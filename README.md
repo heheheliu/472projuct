@@ -18,8 +18,10 @@ e1 be a very simple but fast heuristic, and e2 be more sophisticated and complex
 (b) the number of blocs – b – an integer in [0..2n]
 (c) the positions of the blocs – b board coordinates
 (d) the winning line-up size – s – an integer in [3..n]
-(e) the maximum depth of the adversarial search for player 1 and for player 2 – 2 integers d1 and d2 (f) the maximum allowed time (in seconds) for your program to return a move – t
-(g) a Boolean to force the use of either minimax (FALSE) or alphabeta (TRUE) – a (h) the play modes: 
+(e) the maximum depth of the adversarial search for player 1 and for player 2 – 2 integers d1 and d2 
+(f) the maximum allowed time (in seconds) for your program to return a move – t
+(g) a Boolean to force the use of either minimax (FALSE) or alphabeta (TRUE) – a 
+(h) the play modes: 
 H-H, H-AI, AI-H and AI-AI.
 
 
@@ -32,7 +34,7 @@ Generated 2 types of output ﬁles: game traces and a scoreboard with statistics
 
 1.	The parameters of the game: the values of n, b, s, t
 2.	The position of the blocs
-3.	The parameters of each player: the values human or AI, and in the case of an AI, the corresponding values of the depth of the search (d1 or d2), the corresponding values of the alphabeta vs minimax of the search (a1 or a2, or both) and which heuristic was used (e1 or e2).
+3.	The parameters of each player: the values human or AI, and in the case of an AI, the corresponding values of the depth of the search (d1 or d2), the corresponding values of     the alphabeta vs minimax of the search (a1 or a2, or both) and which heuristic was used (e1 or e2).
 4.	A display of the initial conﬁguration of the board.
 5.
 (a) the move taken (eg. B 4)
